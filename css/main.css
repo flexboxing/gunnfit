@@ -324,11 +324,10 @@ body {
   .jumbotron {
     padding-top: 0;
     padding-bottom: 50px; }
-
-  h1 {
-    font-size: 12vw !important;
-    padding-left: 0.4em !important;
-    letter-spacing: 0.5em !important; }
+    .jumbotron h1 {
+      font-size: 12vw;
+      padding-left: 0.4em;
+      letter-spacing: 0.5em; }
 
   .logo {
     -webkit-transform: skew(-20deg, 0deg) scale(0.5, 0.5);
@@ -412,7 +411,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 100px 70vw 84px 0;
-    border-color: transparent #FF3C4A transparent transparent;
+    border-color: transparent #a2a0aa transparent transparent;
     position: absolute;
     top: -127px;
     right: 0;
@@ -572,7 +571,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 84px 0 100px 70vw;
-    border-color: transparent transparent transparent #FF3C4A;
+    border-color: transparent transparent transparent #a2a0aa;
     position: absolute;
     bottom: -127px;
     left: 0;
@@ -655,5 +654,174 @@ footer {
       justify-content: flex-start; }
       footer ul {
         margin-bottom: 40px; } }
+
+header {
+  height: 230px;
+  width: 100%;
+  background-image: url("../img/gunnar2.jpg");
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center -340px;
+  position: relative;
+  overflow: hidden; }
+  header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  header h1 {
+    color: white;
+    font-size: 5em;
+    padding-left: 1em;
+    line-height: 0.28em;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    font-family: 'Geo', sans-serif;
+    font-style: italic; }
+    @media screen and (max-width: 750px) {
+      header h1 {
+        font-size: 3.5em;
+        line-height: 0.14em;
+        padding-left: 0.5em; } }
+  header .secondary-logo {
+    background: tomato;
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    position: absolute;
+    bottom: 84px;
+    left: 430px; }
+  @media screen and (min-width: 1200px) {
+    header {
+      background-position: center -440px; } }
+
+.content {
+  background: #DDDDDD; }
+
+.subheader {
+  position: relative;
+  background: white; }
+  .subheader .secondary-sub {
+    padding: 110px 80px 110px 80px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif; }
+    @media screen and (max-width: 750px) {
+      .subheader .secondary-sub {
+        padding: 110px 20px 110px 20px;
+        font-size: 1.9em; } }
+  .subheader:before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 100px 100vw;
+    border-color: transparent transparent transparent white; }
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 100px; }
+  .grid-container .program-container {
+    width: 300px;
+    height: 400px;
+    background: #222222;
+    margin: 15px;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+    background-repeat: no-repeat; }
+    .grid-container .program-container h3 {
+      color: black;
+      position: absolute;
+      bottom: 50px;
+      font-family: 'Lato',sans-serif;
+      background: white;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 10px; }
+    .grid-container .program-container p {
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      background: white;
+      bottom: -10px;
+      height: 60px;
+      color: rgba(0, 0, 0, 0.8);
+      font-family: 'Lato', sans-serif;
+      width: 100%; }
+    @media screen and (max-width: 750px) {
+      .grid-container .program-container {
+        width: 100vw; } }
+  .grid-container .twelve {
+    background-image: url("../img/gunnar5.jpg");
+    background-position: -70px -30px;
+    background-size: cover; }
+  .grid-container .booty {
+    background-image: url("../img/b1.jpg");
+    background-position: -100px -50px;
+    background-size: cover; }
+  .grid-container .volume {
+    background-image: url("../img/gunnar11.jpg");
+    background-position: -120px -20px;
+    background-size: cover; }
+  .grid-container .strength {
+    background-image: url("../img/gunnar6.jpg");
+    background-position: -150px;
+    background-size: cover; }
+  .grid-container .diet {
+    background-image: url("../img/veg.jpg");
+    background-position: -90px -100px;
+    background-size: cover; }
+  .grid-container .online {
+    background-image: url("../img/live.svg");
+    background-color: #E62119;
+    background-position: right;
+    background-size: 200px; }
+  .grid-container .relocate {
+    background-image: url("../img/gunnar5.jpg");
+    background-size: cover; }
+  @media screen and (max-width: 750px) {
+    .grid-container .twelve {
+      background-position: 0 -25px; }
+    .grid-container .booty {
+      background-position: 0 0; }
+    .grid-container .volume {
+      background-position: 0 -25px; }
+    .grid-container .strength {
+      background-position: 0 0; }
+    .grid-container .diet {
+      background-position: 0 -110px; }
+    .grid-container .online {
+      background-position: right;
+      background-size: 60vw; } }
+  @media screen and (max-width: 500px) {
+    .grid-container .twelve {
+      background-position: -30px -25px; }
+    .grid-container .booty {
+      background-position: -60px 0; }
+    .grid-container .volume {
+      background-position: -90px -25px; }
+    .grid-container .strength {
+      background-position: -70px 0; } }
 
 /*# sourceMappingURL=main.css.map */

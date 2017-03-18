@@ -34,5 +34,10 @@ $(document).ready(function(){
 
 	});
 
+    window.sr = ScrollReveal().reveal('.program-container', {
+        reset:true,
+        viewFactor: 0.7
+    }, 100);
+
 });
 
