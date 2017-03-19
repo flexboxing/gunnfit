@@ -34,6 +34,11 @@ $(document).ready(function(){
 
 	});
 
+    window.sr = ScrollReveal().reveal('.quote-text', {
+        reset:true,
+        viewFactor: 0.7
+    });
+
     window.sr = ScrollReveal().reveal('.program-container', {
         reset:true,
         viewFactor: 0.7

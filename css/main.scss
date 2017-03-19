@@ -680,7 +680,7 @@ body {
 	.programs {
 		width:50vw;
 		background-color:#222222;
-		height:300px;
+		height:200px;
 		position:relative;
 		margin-right:2px;
 		display:flex;
@@ -690,7 +690,7 @@ body {
 		transition:background-color 0.3s linear;
 
 		@media screen and (max-width: 750px) {
-			height:200px;
+			height:150px;
 		}
 
 		&:before {
@@ -767,7 +767,7 @@ body {
 	.blog {
 		margin-left:2px;
 		width:50vw;
-		height:300px;
+		height:200px;
 		margin-top:60px;
 		background-color:#222222;
 		align-self:flex-end;
@@ -779,7 +779,7 @@ body {
 		transition:background-color 0.3s linear;
 
 		@media screen and (max-width: 750px) {
-			height:200px;
+			height:150px;
 		}
 
 		&:before {
@@ -875,6 +875,10 @@ body {
 		}
 	}
 
+}
+
+.srv2 {
+	margin-top:-175px;
 }
 
 .shop-link {
@@ -1098,6 +1102,20 @@ header {
 
 	}
 
+	.shop-sub {
+		background:white;
+		padding:110px 80px 110px 80px;
+		margin:0 auto;
+		text-align:center;
+		font-family:'Lato', sans-serif;
+		line-height:1.5em;
+
+		@media screen and (max-width: 750px) {
+			padding:80px 10px 80px 10px;
+			font-size:1.5em;
+		}
+	}
+
 	.grid-container {
 		display:flex;
 		flex-wrap:wrap;
@@ -1241,6 +1259,5 @@ header {
 		}
 
 	}
-
 
 
