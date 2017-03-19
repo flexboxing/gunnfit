@@ -1049,25 +1049,22 @@ header {
 		}
 	}
 
-	.secondary-logo {
-		background:tomato;
-		-webkit-transform: scale(0.5, 0.5);
-		-moz-transform: scale(0.5, 0.5);
-		-o-transform: scale(0.5, 0.5);
-		-ms-transform: scale(0.5, 0.5);
-		transform: scale(0.5, 0.5);
-		position:absolute;
-		bottom:84px;
-		left:430px;
-	}
-
 	@media screen and (max-width: 750px) {
 
-		} @media screen and (min-width: 1200px) {
-			background-position:center -440px;
-		}
-
+	} 
+	@media screen and (min-width: 1200px) {
+		background-position:center -440px;
 	}
+
+}
+
+.shop-header {
+	height:500px;
+	background:url("../img/gunnar9.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:0 -100px;
+}
 
 	.content {
 		background:#DDDDDD;
