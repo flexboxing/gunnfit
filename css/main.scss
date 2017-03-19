@@ -1063,7 +1063,15 @@ header {
 	background:url("../img/gunnar9.jpg");
 	background-attachment:fixed;
 	background-size:cover;
-	background-position:0 -100px;
+	background-position:center -100px;
+
+	@media screen and (max-width: 750px) {
+		
+	} 
+	@media screen and (min-width: 1200px) {
+		background-position:center -200px;
+		height:620px;
+	}
 }
 
 	.content {
