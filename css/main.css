@@ -711,9 +711,6 @@ header {
   height: 60vw;
   max-height: 95vh;
   background-repeat: no-repeat; }
-  @media screen and (min-width: 1200px) {
-    .shop-header {
-      background-position: center -15vw; } }
 
 .content {
   background: #DDDDDD; }
