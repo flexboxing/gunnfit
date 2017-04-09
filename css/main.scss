@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,700|Julius+Sans+One|Aldrich|Geo|Maven+Pro|Michroma|Nova+Square|Orbitron|Overpass|Rationale|Syncopate:400,700');
+@import url('https://fonts.googleapis.com/css?family=Khula:400,700|Lato:300,700,900|Julius+Sans+One|Aldrich|Geo|Maven+Pro|Michroma|Nova+Square|Orbitron|Overpass|Rationale|Syncopate:400,700');
 
 //font-family: 'Quicksand', sans-serif;
 //font-family: 'Raleway', sans-serif;
@@ -29,7 +29,7 @@ $primary-dark:#6c6e7d;
 $primary-light:#a2a0aa;
 $secondary-dark:#252329;
 $secondary-light:#dfe2ef;
-$accent:#FF3C4A;
+$accent:#E82B2F;
 
 $logo-brand:rgba(white,0.3);
 
@@ -528,7 +528,7 @@ body {
 .quote-view {
 	width:100%;
 	position:relative;
-	padding:90px 80px 160px 80px;
+	padding:80px 80px 160px 80px;
 	display:flex;
 
 	h3 {
@@ -616,6 +616,8 @@ body {
 		p {
 			width:default;
 			margin-left:40px;
+			font-size:1.5em;
+			padding-top:60px;
 		}
 	}
 }
@@ -1008,15 +1010,103 @@ footer {
 
 #particles-js {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: #222222;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   margin-bottom:100px;
-  margin-top:-300px;
+  margin-top:-100px;
+  position:relative;
+
+  h3 {
+  	position:absolute;
+  	width:100%;
+  	text-align:center;
+  	top:50%;
+  	color:white;
+  	font-family:'Khula', sans-serif;
+  	font-weight:900;
+  	font-size:5vw;
+  	line-height:150px;
+  	margin-top:-70px;
+
+  	span {
+  		font-weight:400;
+  		color:$accent;
+  	}
+
+  	@media screen and (max-width: 750px) {
+  		font-size:7vw;
+	} 
+  }
+
+  &:before {
+  	content:"";
+  	position:absolute;
+  	top:0;
+  	left:0;
+  	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 100px 100vw 0 0;
+	border-color: white transparent transparent transparent;
+  }
+
+  &:after {
+  	content:"";
+  	position:absolute;
+  	bottom:-0;
+  	right:0;
+  	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 100px 100vw;
+	border-color: transparent transparent white transparent;
+  }
+
 }
+
+#header-carousel {
+
+	height:500px;
+
+	margin-bottom:80px;
+
+	img {
+		filter:brightness(75%);
+	}
+
+	.carousel-caption {
+
+		height:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+
+		h3 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight:700;
+			font-size:2.3em;
+
+			@media screen and (max-width: 750px) {
+				font-size:1.8em;
+			}
+		}
+
+		p {
+			font-family: 'PT Sans', sans-serif;
+			color:rgba(white,0.9);
+
+			@media screen and (max-width: 750px) {
+				display:none;
+			}
+		}
+	}
+
+}
+
 
 header {
 	height:230px;
