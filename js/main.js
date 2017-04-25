@@ -27,9 +27,6 @@ $(document).ready(function(){
     	if (scroll >= lower_bound && scroll <= upper_bound) {
         	$('.quote-span').addClass('expanded-span');
         	$('.quote-text').addClass('expanded-border');
-    	} else {
-        	$('.quote-span').removeClass('expanded-span');
-        	$('.quote-text').removeClass('expanded-border');
     	}
 
 	});
