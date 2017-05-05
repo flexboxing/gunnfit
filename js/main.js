@@ -8,6 +8,10 @@ $(document).ready(function(){
 
 	});
 
+    $('.info').click(function(){
+        $(this).closest('.program-container').toggleClass('container-long');
+    });
+
 	$(window).scroll(function() {    
     	var scroll = $(window).scrollTop();
 
@@ -15,18 +19,6 @@ $(document).ready(function(){
         	$('.navbar').addClass('navbarOpen');
     	} else {
         	$('.navbar').removeClass('navbarOpen');
-    	}
-
-    	var upper_bound = 1100;
-    	var lower_bound = 400;
-
-    	if ($( window ).width() < 750) {
-    		upper_bound = 1300;
-    	}
-
-    	if (scroll >= lower_bound && scroll <= upper_bound) {
-        	$('.quote-span').addClass('expanded-span');
-        	$('.quote-text').addClass('expanded-border');
     	}
 
 	});

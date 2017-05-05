@@ -357,11 +357,9 @@ body {
         top: 0;
         bottom: 0;
         left: -5px;
-        right: -5px;
+        right: -200px;
         background: black;
         transition: right 0.5s ease-in-out; }
-    .quote-view h3 .expanded-span:before {
-      right: -200px; }
   .quote-view p {
     width: 80%;
     font-size: 1.7em;
@@ -371,21 +369,17 @@ body {
     position: relative;
     padding-top: 70px;
     padding-left: 10px;
-    color: transparent;
+    color: inherit;
     transition: color 0.5s ease-out; }
     .quote-view p:before {
       content: "";
-      height: 0%;
+      height: 100%;
       display: block;
       position: absolute;
       top: 0;
       left: -10px;
       border-left: solid 1px black;
       transition: height 0.5s ease-in-out; }
-  .quote-view .expanded-border {
-    color: inherit; }
-    .quote-view .expanded-border:before {
-      height: 100%; }
   @media screen and (max-width: 750px) {
     .quote-view {
       padding: 50px 10px 120px 10px;
@@ -736,7 +730,7 @@ footer {
 header {
   height: 230px;
   width: 100%;
-  background-image: url("../img/gunnar2.jpg");
+  background-image: url("../img/tire.jpg");
   -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(100%);
@@ -777,6 +771,9 @@ header {
     header {
       bbackground-position: center -18vw; } }
 
+.prog {
+  background-image: url("../img/gunnar2.jpg"); }
+
 .shop-header {
   background: url("../img/IMG_7687.PNG");
   background-attachment: fixed;
@@ -797,10 +794,9 @@ header {
   background: #DDDDDD; }
 
 .subheader {
-  position: relative;
-  background: white; }
+  position: relative; }
   .subheader .secondary-sub {
-    padding: 110px 80px 110px 80px;
+    padding: 110px 80px 150px 80px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Lato', sans-serif; }
@@ -808,15 +804,6 @@ header {
       .subheader .secondary-sub {
         padding: 110px 20px 110px 20px;
         font-size: 1.9em; } }
-  .subheader:before {
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 60px 0 100px 100vw;
-    border-color: transparent transparent transparent white; }
 
 .shop-sub {
   background: white;
@@ -831,34 +818,69 @@ header {
       font-size: 1.5em; } }
 
 .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0px;
-  padding-bottom: 100px; }
+  background: #DDDDDD;
+  padding-top: 50px; }
   .grid-container .program-container {
-    width: 300px;
-    height: 400px;
-    background: #222222;
-    margin: 15px;
+    margin: 0 auto 50px auto;
+    width: 95%;
+    height: 300px;
+    background: white;
     border-radius: 3px;
-    position: relative;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     overflow: hidden;
     background-repeat: no-repeat; }
+    .grid-container .program-container .program-img {
+      width: 50%;
+      position: relative; }
+      .grid-container .program-container .program-img:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-style: solid;
+        border-width: 0 0 250px 200px;
+        border-color: transparent transparent white transparent; }
     .grid-container .program-container .program-description {
       background: white;
-      position: absolute;
-      bottom: 0;
-      height: 110px;
-      width: 100%; }
+      width: 50%;
+      position: relative; }
+    .grid-container .program-container .info {
+      background: #AAAAAA;
+      font-family: "Lato", sans-serif;
+      padding: 10px 0 10px 0;
+      color: white;
+      border: none;
+      width: 100vw;
+      height: 50px;
+      outline: none; }
+      .grid-container .program-container .info:hover {
+        background: #E82B2F; }
+      .grid-container .program-container .info:hover {
+        background: #E82B2F; }
+    .grid-container .program-container .left:after {
+      left: 0;
+      right: inherit;
+      border-width: 250px 0 0 200px;
+      border-color: transparent transparent transparent white; }
+    .grid-container .program-container .upper {
+      display: flex;
+      height: 250px; }
     .grid-container .program-container h3 {
       color: black;
       font-family: 'Lato',sans-serif;
+      font-size: 2.4em;
       background: white;
-      width: 100%;
-      padding-left: 10px; }
+      padding-left: 10px;
+      position: absolute;
+      bottom: 80px;
+      z-index: 3;
+      white-space: nowrap;
+      text-align: center;
+      width: 100%; }
+    .grid-container .program-container .right {
+      text-align: right;
+      margin-left: -95px; }
     .grid-container .program-container p {
       padding-left: 10px;
       padding-right: 10px;
@@ -866,36 +888,58 @@ header {
       height: 60px;
       color: rgba(0, 0, 0, 0.8);
       font-family: 'Lato', sans-serif; }
+    .grid-container .program-container .drop-down {
+      padding: 15px 20px 15px 20px;
+      background: white; }
+      .grid-container .program-container .drop-down p {
+        font-size: 1.3em;
+        padding: 10px 20px 10px 20px;
+        background: transparent;
+        color: black;
+        height: auto; }
+      .grid-container .program-container .drop-down ul {
+        font-family: 'Lato', sans-serif; }
+      @media screen and (max-width: 750px) {
+        .grid-container .program-container .drop-down {
+          padding: 10px 0px 10px 5px; } }
+    .grid-container .program-container .program-cost {
+      text-align: center; }
+      .grid-container .program-container .program-cost p {
+        font-size: 3em; }
+      .grid-container .program-container .program-cost button {
+        width: 50%;
+        height: 50px; }
     @media screen and (max-width: 750px) {
-      .grid-container .program-container {
-        width: 100vw; } }
+      .grid-container .program-container h3 {
+        bottom: 5px;
+        font-size: 1.6em; }
+      .grid-container .program-container .right {
+        width: 230px; }
+      .grid-container .program-container .program-img {
+        width: 60%; }
+      .grid-container .program-container .program-description {
+        width: 40%; } }
+  .grid-container .container-long {
+    height: auto; }
   .grid-container .twelve {
     background-image: url("../img/gunnar5.jpg");
     background-position: -70px -30px;
     background-size: cover; }
   .grid-container .booty {
     background-image: url("../img/b1.JPG");
-    background-position: -100px -50px;
+    background-position: 0 -50px;
     background-size: cover; }
   .grid-container .volume {
     background-image: url("../img/gunnar11.jpg");
-    background-position: -120px -20px;
+    background-position: 0 -20px;
     background-size: cover; }
   .grid-container .strength {
     background-image: url("../img/gunnar6.jpg");
-    background-position: -150px;
+    background-position: 0;
     background-size: cover; }
-  .grid-container .diet {
-    background-image: url("../img/veg.jpg");
-    background-position: -90px -100px;
-    background-size: cover; }
-  .grid-container .online {
-    background-image: url("../img/live.svg");
-    background-color: #E62119;
-    background-position: right;
-    background-size: 200px; }
-  .grid-container .relocate {
-    background-image: url("../img/gunnar5.jpg");
+  .grid-container .four {
+    background-image: url("../img/gunnar3.jpg");
+    background-position: 0;
     background-size: cover; }
   @media screen and (max-width: 750px) {
     .grid-container .twelve {
@@ -920,6 +964,10 @@ header {
       background-position: -90px -25px; }
     .grid-container .strength {
       background-position: -70px 0; } }
+
+.content {
+  background: none;
+  position: relative; }
 
 .bios {
   margin-top: -100px; }
@@ -1000,6 +1048,12 @@ header {
       background-position: center 0px;
       height: 250px;
       width: 250px; }
+    .bios .bio .tylor {
+      background-image: url("../img/tylor.PNG");
+      background-position: -10px center;
+      background-size: 350px;
+      height: 250px;
+      width: 250px; }
     @media screen and (max-width: 750px) {
       .bios .bio .bio-body {
         width: 100vw;
@@ -1017,11 +1071,17 @@ header {
   .serv-desc p {
     font-size: 1.3em;
     padding: 0 80px 30px 80px; }
+  @media screen and (max-width: 750px) {
+    .serv-desc p {
+      font-size: 1.3em;
+      padding: 0 10px 30px 10px; } }
 
 .video-box {
   width: 100%;
   background: black;
-  height: 400px; }
+  height: 400px;
+  color: white;
+  text-align: center; }
 
 .online-pt .cost-breakdown {
   width: 90%;
@@ -1060,7 +1120,23 @@ header {
     background: #ca161a; }
 
 .nutrition {
-  background: #EEEEEE; }
+  background-image: url("../img/veg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: white; }
+  .nutrition * {
+    position: relative;
+    z-index: 1; }
+  .nutrition::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0; }
   .nutrition p {
     padding-bottom: 10px; }
   .nutrition .n-desc {
