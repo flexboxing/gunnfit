@@ -807,19 +807,45 @@ header {
 
 .shop-sub {
   background: white;
-  padding: 110px 80px 110px 80px;
+  padding: 100px 80px 100px 80px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-family: 'Lato', sans-serif;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-size: 1.8em; }
+  .shop-sub ul {
+    padding: 30px 80px 30px 80px;
+    margin: 0 auto;
+    text-align: left; }
+    .shop-sub ul li {
+      padding-left: 20px; }
   @media screen and (max-width: 750px) {
     .shop-sub {
       padding: 80px 10px 80px 10px;
-      font-size: 1.5em; } }
+      font-size: 1.5em; }
+      .shop-sub ul {
+        padding: 30px 50px 30px 50px; } }
+
+.cost-breakdown {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif; }
+  .cost-breakdown .costbox {
+    padding: 0 30px 30px 30px; }
+  .cost-breakdown .cost {
+    font-size: 3em; }
+    .cost-breakdown .cost span {
+      font-size: 0.3em; }
 
 .grid-container {
   background: #DDDDDD;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   .grid-container .program-container {
     margin: 0 auto 50px auto;
     width: 95%;
@@ -870,12 +896,11 @@ header {
       color: black;
       font-family: 'Lato',sans-serif;
       font-size: 2.4em;
-      background: white;
+      background: none;
       padding-left: 10px;
       position: absolute;
       bottom: 80px;
       z-index: 3;
-      white-space: nowrap;
       text-align: center;
       width: 100%; }
     .grid-container .program-container .right {
@@ -919,6 +944,24 @@ header {
         width: 60%; }
       .grid-container .program-container .program-description {
         width: 40%; } }
+  .grid-container .custom-cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif; }
+    .grid-container .custom-cost .cc {
+      min-width: 200px; }
+    .grid-container .custom-cost .cust-buy {
+      background: #E82B2F;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 30px 8px 30px;
+      text-align: center;
+      min-width: 150px; }
+      .grid-container .custom-cost .cust-buy:hover {
+        background: #ca161a; }
   .grid-container .container-long {
     height: auto; }
   .grid-container .twelve {
@@ -941,6 +984,8 @@ header {
     background-image: url("../img/gunnar3.jpg");
     background-position: 0;
     background-size: cover; }
+  .grid-container .custom {
+    background-color: #E82B2F; }
   @media screen and (max-width: 750px) {
     .grid-container .twelve {
       background-position: 0 -25px; }
@@ -1061,6 +1106,16 @@ header {
   .bios .limg {
     flex-wrap: wrap-reverse; }
 
+.bio-q {
+  padding: 20px 120px 20px 120px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  color: #888888; }
+  @media screen and (max-width: 750px) {
+    .bio-q {
+      padding: 20px 50px 20px 50px; } }
+
 .serv-desc {
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -1079,9 +1134,18 @@ header {
 .video-box {
   width: 100%;
   background: black;
-  height: 400px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%; }
+  .video-box iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; }
+  @media screen and (min-width: 1000px) {
+    .video-box {
+      padding-bottom: 40%; } }
 
 .online-pt .cost-breakdown {
   width: 90%;
