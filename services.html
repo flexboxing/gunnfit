@@ -58,22 +58,7 @@
               <p>I will be flying around the U.S. and other various countries to live with your family for a week’s time and life coach you in your transition to a healthier lifestyle by educating you about proper nutrition, creating and adhering to fitness programs, and rechanneling your mindset.
               <br><br>
               <i>The world is changed one person at a time.</i></p>
-              <p><a href="#contact-service">Contact</a> me for inquiries.</p>
-              <div class="cost-breakdown">
-                <!--<div class="costbox">
-                  <h3>30-MINUTE SESSION</h3>
-                  <p class="cost">&#36;25</p>
-                  <p class="period">+ travel expenses</p>
-                  <button class="buy-button">Start Now</button>
-                </div>
-                <div class="costbox">
-                  <h3>1-HOUR SESSION</h3>
-                  <p class="cost">&#36;40</p>
-                  <p class="period">+ travel expenses</p>
-                  <button class="buy-button">Start Now</button>
-                </div>
-              </div>-->
-            </div>
+              <p><a href="mailto:gunn@gunnfit.com">Contact Gunnar</a> with inquiries.</p>
               <div class="video-box"><iframe src="https://www.youtube.com/embed/Vb0Uc0QAcag?ecver=2" width="640" height="360" align="center" frameborder="0" allowfullscreen></iframe></div>
           </div>
 
@@ -94,27 +79,65 @@ I look forward to the potential opportunity to work with you and guiding you on 
                 <h3>1-MONTH</h3>
                 <p class="cost">&#36;79.99</p>
                 <p class="period">-</p>
-                <button class="buy-button">Start Now</button>
               </div>
               <div class="costbox m3">
                 <h3>3-MONTH</h3>
                 <p class="cost">&#36;215.99</p>
                 <p class="period">10&#37; discount</p>
-                <button class="buy-button">Start Now</button>
               </div>
               <div class="costbox m6">
                 <h3>6-MONTH</h3>
                 <p class="cost">&#36;379.99</p>
                 <p class="period">20&#37; discount</p>
-                <button class="buy-button">Start Now</button>
               </div>
               <div class="costbox m12">
                 <h3>12-MONTH</h3>
                 <p class="cost">&#36;699.99</p>
                 <p class="period">25+&#37; discount</p>
-                <button class="buy-button">Start Now</button>
               </div>
             </div>
+            <div class="buy-button" id='product-component-1497916013511'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'gunnfit.myshopify.com',
+          apiKey: 'fe019be83539f0812983654d7a054e51',
+          appId: '6',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [9536790288],
+            node: document.getElementById('product-component-1497916013511'),
+            moneyFormat: '${{amount}}',
+            options: {"product":{"variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"20px","margin-bottom":"50px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"},"compareAt":{"font-size":"12px"}}},"cart":{"contents":{"button":true},"styles":{"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"footer":{"background-color":"#ffffff"}}},"modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"}}},"toggle":{"styles":{"toggle":{"background-color":"#e82b2f",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"count":{"font-size":"14px"}}},"productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
           </div>
 
           <div class="nutrition">
@@ -123,18 +146,51 @@ I look forward to the potential opportunity to work with you and guiding you on 
               <p>
               Nutritional consultations are conducted via Skype/FaceTime or phone call so I can collect information to determine what will benefit you best. The initial call typically lasts thirty minutes to an hour due to the numerous topics we will cover.  Following our conversation, I will construct a dietary advice plan. In this plan, I will recommend exactly what you should be eating, but please keep in mind that I am not a nutritionist or a registered dietician, and therefore all the information I give you is nothing more than a set of recommendations. Please choose a plan that works best for you and your goals:
               </p>
-              <ul>
-                <li>Build lean muscle while burning fat</li>
-                <li>Weight loss</li>
-                <li>Post-partum weight loss</li>
-                <li>Cutting</li>
-                <li>Bulking</li>
-                <li>Performance for athletes</li>
-              </ul>
 
               <div class="costbox">
                 <p class="cost-nutr">&#36;99.99</p>
-                <button class="buy-button">Add to cart</button>
+                <div class="buy-button" id='product-component-1497916798296'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'gunnfit.myshopify.com',
+          apiKey: 'fe019be83539f0812983654d7a054e51',
+          appId: '6',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [9536826960],
+            node: document.getElementById('product-component-1497916798296'),
+            moneyFormat: '${{amount}}',
+            options: {"product":{"variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"}}},"cart":{"contents":{"button":true},"styles":{"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"footer":{"background-color":"#ffffff"}}},"modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"}}},"toggle":{"styles":{"toggle":{"background-color":"#e82b2f",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"count":{"font-size":"14px"}}},"productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
               </div>
               <p><i>*Purchasing a nutritional consultation grants 50% off of a pre-existing workout program of choice</i></p>
             </div>
@@ -146,31 +202,66 @@ I look forward to the potential opportunity to work with you and guiding you on 
               <p><i>Storrs, CT</i></p>
               <div class="cost-breakdown">
                 <div class="costbox">
-                  <h3>30-MINUTE SESSION</h3>
+                  <h3>30-MINUTE<br>(STANDARD)</h3>
                   <p class="cost">&#36;25</p>
-                  <button class="buy-button">Start Now</button>
                 </div>
                 <div class="costbox">
-                  <h3>1-HOUR SESSION</h3>
+                  <h3>1-HOUR<br>(STANDARD)</h3>
                   <p class="cost">&#36;40</p>
-                  <button class="buy-button">Start Now</button>
                 </div>
-              </div>
-
-              <h3>SPORTS SPECIFIC TRAINING</h3>
-              <p></p>
-              <div class="cost-breakdown">
+                <div class="cost-breakdown">
                 <div class="costbox">
-                  <h3>30-MINUTE SESSION</h3>
+                  <h3>30-MINUTE<br>(SPORTS SPECIFIC)</h3>
                   <p class="cost">&#36;30</p>
-                  <button class="buy-button">Start Now</button>
                 </div>
                 <div class="costbox">
-                  <h3>1-HOUR SESSION</h3>
+                  <h3>1-HOUR<br>(SPORTS SPECIFIC)</h3>
                   <p class="cost">&#36;50</p>
-                  <button class="buy-button">Start Now</button>
+                </div>
                 </div>
               </div>
+              <div class="buy-button" id='product-component-1497917539130'></div>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'gunnfit.myshopify.com',
+          apiKey: 'fe019be83539f0812983654d7a054e51',
+          appId: '6',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent('product', {
+            id: [9536887632],
+            node: document.getElementById('product-component-1497917539130'),
+            moneyFormat: '${{amount}}',
+            options: {"product":{"variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"}}},"cart":{"contents":{"button":true},"styles":{"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"footer":{"background-color":"#ffffff"}}},"modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}},"button":{"background-color":"#e82b2f","font-size":"14px","padding-top":"15px","padding-bottom":"15px",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"quantityInput":{"font-size":"14px","padding-top":"15px","padding-bottom":"15px"}}},"toggle":{"styles":{"toggle":{"background-color":"#e82b2f",":hover":{"background-color":"#d1272a"},":focus":{"background-color":"#d1272a"}},"count":{"font-size":"14px"}}},"productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
               <p><i>*Group, Package, and Student discounts available</i></p>
               <br>
               <p><b>IN-HOME TRAINING SESSIONS</b><br><br>Same rate as personal training plus a  travel fee based on location. Yes, I will travel to your home! As long as you have your body, you have a machine that can be used to attain your dream body. I also travel with a comprehensive resistance band kit that I will incorporate into your workouts.</p>
@@ -195,148 +286,6 @@ I look forward to the potential opportunity to work with you and guiding you on 
           <script src="js/vendor/bootstrap.min.js"></script>
 
           <script src="js/main.js"></script>
-
-          <div style="display:none;" id='collection-component-d6f89528cd4'></div>
-          <script type="text/javascript">
-            /*<![CDATA[*/
-
-            (function () {
-              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-              if (window.ShopifyBuy) {
-                if (window.ShopifyBuy.UI) {
-                  ShopifyBuyInit();
-                } else {
-                  loadScript();
-                }
-              } else {
-                loadScript();
-              }
-
-              function loadScript() {
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = scriptURL;
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                script.onload = ShopifyBuyInit;
-              }
-
-              function ShopifyBuyInit() {
-                var client = ShopifyBuy.buildClient({
-                  domain: 'gunnfit.myshopify.com',
-                  apiKey: 'fe019be83539f0812983654d7a054e51',
-                  appId: '6',
-                });
-
-                ShopifyBuy.UI.onReady(client).then(function (ui) {
-                  ui.createComponent('collection', {
-                    id: 409906832,
-                    node: document.getElementById('collection-component-d6f89528cd4'),
-                    moneyFormat: '%24%7B%7Bamount%7D%7D',
-                    options: {
-                      "product": {
-                        "variantId": "all",
-                        "contents": {
-                          "imgWithCarousel": false,
-                          "variantTitle": false,
-                          "description": false,
-                          "buttonWithQuantity": false,
-                          "quantity": false
-                        },
-                        "styles": {
-                          "product": {
-                            "@media (min-width: 601px)": {
-                              "max-width": "calc(33.33333% - 30px)",
-                              "margin-left": "30px",
-                              "margin-bottom": "50px"
-                            }
-                          },
-                          "button": {
-                            "background-color": "#222222",
-                            ":hover": {
-                              "background-color": "#3a3a3a"
-                            },
-                            ":focus": {
-                              "background-color": "#3a3a3a"
-                            }
-                          }
-                        }
-                      },
-                      "cart": {
-                        "contents": {
-                          "button": true
-                        },
-                        "styles": {
-                          "button": {
-                            "background-color": "#222222",
-                            ":hover": {
-                              "background-color": "#3a3a3a"
-                            },
-                            ":focus": {
-                              "background-color": "#3a3a3a"
-                            }
-                          },
-                          "footer": {
-                            "background-color": "#ffffff"
-                          }
-                        }
-                      },
-                      "modalProduct": {
-                        "contents": {
-                          "img": false,
-                          "imgWithCarousel": true,
-                          "variantTitle": false,
-                          "buttonWithQuantity": true,
-                          "button": false,
-                          "quantity": false
-                        },
-                        "styles": {
-                          "product": {
-                            "@media (min-width: 601px)": {
-                              "max-width": "100%",
-                              "margin-left": "0px",
-                              "margin-bottom": "0px"
-                            }
-                          },
-                          "button": {
-                            "background-color": "#222222",
-                            ":hover": {
-                              "background-color": "#3a3a3a"
-                            },
-                            ":focus": {
-                              "background-color": "#3a3a3a"
-                            }
-                          }
-                        }
-                      },
-                      "toggle": {
-                        "styles": {
-                          "toggle": {
-                            "background-color": "#222222",
-                            ":hover": {
-                              "background-color": "#3a3a3a"
-                            },
-                            ":focus": {
-                              "background-color": "#3a3a3a"
-                            }
-                          }
-                        }
-                      },
-                      "productSet": {
-                        "styles": {
-                          "products": {
-                            "@media (min-width: 601px)": {
-                              "margin-left": "-30px"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  });
-});
-}
-})();
-/*]]>*/
-</script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
